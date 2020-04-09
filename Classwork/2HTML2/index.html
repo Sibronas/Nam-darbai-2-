@@ -92,13 +92,16 @@
             <label for="pavarde">Pavarde</label>
             <input type="text" id="pavarde" placeholder="Iveskite savo pavarde">
 
-            <input type="email" placeholder="Iveskite el pasto adresa" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Iveskite el pasto adresa" required>
 
-            <input type="password" placeholder="Iveskite slaptazodi" required>
+            <label for="password">Slaptazodis</label>
+            <input type="password" id="password" placeholder="Iveskite slaptazodi" required>
 
             <input type="text" value="2020-04-04" readonly>
 
-            <input type="date">
+            <label for="date">Data</label>
+            <input type="date" id="date">
 
             <input type="radio" id="vyras" name="lytis" value="vyras">
             <label for="vyras">Vyras</label>
@@ -214,14 +217,27 @@
                         <legend>Prisijungimo duomenys</legend>
                         <table>
                             <tr>
-                                <td><input type="email" placeholder="Iveskite el pasto adresa" required></td>
-                                <td><input type="date" required></td>
+
+                                <td>
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="Iveskite el pasto adresa" required>
+                                </td>
+                                <td>
+                                    <label for="date">Data</label>
+                                    <input type="date" id="date" required>
+                                </td>
                             </tr>
                             <tr>
-                                <td><input type="password" placeholder="Iveskite slaptazodi" required></td>
+                                <td>
+                                    <label for="password">Slaptazodis</label>
+                                    <input type="password" id="password" placeholder="Iveskite slaptazodi" required>
+                                </td>
                             </tr>
                             <tr>
-                                <td><input type="password" placeholder="Pakartokite slaptazodi" required></td>
+                                <td>
+                                    <label for="password">Slaptazodis</label>
+                                    <input type="password" id="password" placeholder="Pakartokite slaptazodi" required>
+                                </td>
                             </tr>
                             <tr>
                                 <td><input type="submit" value="Siusti"></td>

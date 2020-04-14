@@ -1,0 +1,71 @@
+/*
+ * Reseting styles / default vaules
+*/
+p {
+/*    color: black!important;*/
+    color: black;
+    background-color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+body {
+    font-family: sans-serif;
+}
+
+/* end of RESET*/
+
+ /*My custom styles
+start of HEADER section*/
+#header span.logos .main-logo {
+    width: 120px;
+    height: 60px;
+}
+
+#header span.logos .main-logo:hover {
+    filter: contrast(0.2);
+}
+
+.header-main-menu {
+    font-size: 20px;
+}
+/* end of HEADER section */
+
+/* start of MAIN CONTENT section */
+#warning-message {
+    color: darkblue;
+    background-color: yellow;
+
+}
+
+body div p#warning-message.border-red {
+    border: 5px solid blue;
+}
+
+p.available-in-region.border-red a{
+    color: black
+}
+
+p.available-in-region.border-red a:hover {
+    color: white;
+    background-color: black;
+}
+
+p:last-child {
+    color: red;
+}
+
+p:last-child a:visited {
+    color: grey;
+}
+/*  end ofMAIN CONTENT section */
+
+/* start of FOOTER section*/
+#footer {
+    height: 400px;
+    background-color: #7df0a4;
+    opacity: 0.6;
+}
+/* end of FOOTER section */

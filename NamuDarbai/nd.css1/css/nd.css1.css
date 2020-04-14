@@ -1,0 +1,30 @@
+/*
+ * Reseting styles / default vaules
+*/
+.header {
+    color: #db5e79;
+}
+
+
+/* end of RESET */
+
+ /*My custom styles
+start of HEADER section*/
+
+.first-word-first-paragraph {
+    font-style: italic;
+}
+
+.second-header-second-paragraph {
+    opacity: 0.6;
+}
+
+/* end of HEADER section */
+
+/* start of MAIN CONTENT section */
+
+/*  end ofMAIN CONTENT section */
+
+/* start of FOOTER section*/
+
+/* end of FOOTER section */

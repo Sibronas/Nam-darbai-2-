@@ -1,0 +1,66 @@
+/*
+ * Reseting styles / default vaules
+*/
+
+hr {
+    width: 598px;
+    text-align: center;
+}
+
+/* end of RESET */
+
+ /*My custom styles
+start of HEADER section*/
+
+#header {
+   text-align: center;
+}
+
+
+.hr1 {
+    border: 2px solid black;
+}
+
+ul li {
+    display: inline;
+    text-align: center;
+}
+
+#header-menu {
+    text-align: center;
+    font-family: cursive;
+}
+
+
+.hr2 {
+    border: 1px solid black;
+
+}
+
+/* end of HEADER section */
+
+/* start of MAIN CONTENT section */
+
+#main-content-items {
+    text-align: center;
+
+}
+
+#all-around {
+    border-style: double;
+
+}
+
+
+
+
+.main-content-info {
+    text-align: center;
+    font-family: inherit;
+}
+
+/*  end ofMAIN CONTENT section */
+
+/* start of FOOTER section*/
+
+/* end of FOOTER section */

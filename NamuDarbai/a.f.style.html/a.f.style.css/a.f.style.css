@@ -1,0 +1,67 @@
+/*
+ * Reseting styles / default vaules
+*/
+.apklausos-forma {
+    background-color: #bdbf1d;
+
+    height: 50px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.apklausos-forma__pavadinimas {
+/*    nesuprantu, kodėl nei padding nei margin čia neveikia ir neina pakeisti teksto dydžio*/
+    color: #024f05;
+    text-transform: uppercase;
+/*    height: 30px; nereaguoja kažkodėl*/
+}
+.formos-dalis {
+    background-color: #fffd87;
+}
+/* end of RESET */
+
+ /*My custom styles
+start of HEADER section*/
+
+/* end of HEADER section */
+
+/* start of MAIN CONTENT section */
+
+.formos-dalies__pavadinimas {
+    color: #3003fc;
+}
+
+.pavadinimas__vardas--pavarde {
+    color: #229c78;
+}
+
+.pagrindinis-turinys {
+    color: #e35a0b;
+}
+
+.chekboksu_laukeliai {
+    color: #8a0664;
+}
+
+.paskutinis_mygtukas {
+    border: 2px solid #822e00;
+}
+
+.didelis_laukelis {
+    width: 400px;
+    height: 100px;
+}
+
+.chekboksu_aprasymas {
+    font-family: 'Girassol', cursive;
+    color: #eb1405;
+}
+
+
+
+/*  end ofMAIN CONTENT section */
+
+/* start of FOOTER section*/
+
+/* end of FOOTER section */

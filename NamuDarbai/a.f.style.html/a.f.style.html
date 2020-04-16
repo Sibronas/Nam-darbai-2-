@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apklausos forma</title>
+        <link href="a.f.style.css/a.f.style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="apklausos-forma">
+            <span class="apklausos-forma__pavadinimas">
+                Apklausos forma
+            </span>
+        </div>
+        <fieldset class="formos-dalis">
+            <legend class="formos-dalies__pavadinimas">Jūsų informacija</legend>
+            <table class="pavadinimas__vardas--pavarde">
+                <tr>
+                    <td>
+                        <label for="vardas">Vardas: &nbsp;</label>
+                        <input type="text" id="vardas" placeholder="Iveskite savo varda">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pavarde">Pavarde:</label>
+                        <input type="text" id="pavarde" placeholder="Iveskite savo pavarde">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset class="formos-dalis">
+            <legend class="formos-dalies__pavadinimas">Klausimai</legend>
+            <table class="pagrindinis-turinys">
+                <tr>
+                    <td>Kaip sužinojote apie mus?</td>
+                        <td>
+                            <select>
+                                <option>Google</option>
+                                <option>Facebook</option>
+                                <option>Laikraštis</option>
+                                <option>Draugo rekomendacija</option>
+                            </select>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ar apsilankysite vėl?
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="taip" name="taip" value="taip">
+                        <label for="taip">Taip</label>
+
+                        <input type="radio" id="ne" name="ne" value="ne">
+                        <label for="ne">Ne</label>
+
+                        <input type="radio" id="galbūt" name="galbūt" value="galbūt">
+                        <label for="galbūt">Galbūt</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <br>
+                        Ką manote apie kursą?
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="didelis_laukelis">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="chekboksu_aprasymas">
+                        Pažymėkite programavimo kalbas su kuriomis esate susipažinę:
+                    </td>
+                </tr>
+                    <table class="chekboksu_laukeliai">
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="c#" name="c#">
+                                <label for="c#">C#</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" id="java" name="java">
+                               <label for="java">Java</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" id="php" name="php">
+                                <label for="php">PHP</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="html" name="html">
+                                <label for="html">HTML</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" id="css" name="css">
+                                <label for="css">CSS</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" id="javascript" name="javascript">
+                                <label for="javascript">JavaScript</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="python" name="python">
+                                <label for="python">Python</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" id="ruby" name="ruby">
+                                <label for="ruby">Ruby</label>
+                            </td>
+                        </tr>
+                    </table>
+                <tr>
+
+                    <td><input type="submit" value="Siusti" class="paskutinis_mygtukas"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>

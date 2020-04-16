@@ -28,8 +28,32 @@ ul li {
 
 #header-menu {
     text-align: center;
+/*    text align, man neišcentruoja turinio teisingai*/
     font-family: cursive;
 }
+
+.header-menu-items-1{
+    color: #e30202;
+    padding: 20px 10px 20px 10px;
+}
+
+.header-menu-items-2{
+    padding: 20px 10px 20px 10px;
+}
+
+.header-menu-items-3{
+    padding: 20px 10px 20px 10px;
+}
+
+.header-menu-items-4{
+    padding: 20px 10px 20px 10px;
+}
+
+.header-menu-items-5{
+    padding: 20px 10px 20px 10px;
+}
+
+
 
 
 .hr2 {
@@ -42,8 +66,7 @@ ul li {
 /* start of MAIN CONTENT section */
 
 #main-content-items {
-    text-align: center;
-
+    text-align:center;
 }
 
 #all-around {

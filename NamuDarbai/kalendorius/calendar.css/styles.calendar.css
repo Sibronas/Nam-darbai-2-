@@ -1,0 +1,34 @@
+/*
+ * Reseting styles / default vaules
+*/
+.squares-day div span{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+/*  Nesuprantu, kodėl man nekeičia dydžiu nei iš vieno lygmens, nei pirmo tėvinio div, nei vaiko, nei span, padding duoda, o width ir height nekeičia nieko  */
+}
+
+/* end of RESET */
+
+ /*My custom styles
+start of HEADER section*/
+
+.quares-day__weekday  span {
+    width: 100px;
+    height: 100px;
+}
+
+.squares-day__weekday--everyday {
+    width: 100px;
+    height: 100px;
+}
+
+/* end of HEADER section */
+
+/* start of MAIN CONTENT section */
+
+/*  end ofMAIN CONTENT section */
+
+/* start of FOOTER section*/
+
+/* end of FOOTER section */

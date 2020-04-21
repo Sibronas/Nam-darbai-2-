@@ -5,101 +5,137 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calendar</title>
         <style>
-            /*
-             * Reseting styles / default vaules
-            */
-            .squares-day__weekday {
+
+            .header {
+                width: 100%;
+                height: 60px;
+            }
+
+            .header-date {
+                font-size: 45px;
+                margin: 0 0 5px 10px;
+            }
+
+            .squares-day {
                 display: inline-block;
-                border: 1px solid black;
+                width: 100%;
+                margin: 0 10px 5px 10px;
+            }
+
+            .weekdays-names {
+                display: inherit;
+                width: 100px;
+                margin: 0 0 5px 0px;
+                border: 1px solid white;
+/*                baltą border uždėjau, kad nereikėtų po vieną dienos pavadinimą tempti su margin atskirai*/
+            }
+
+            .squares-day__weekday {
                 width: 100px;
                 height: 100px;
-                }
-
-            /*  Nesuprantu, kodėl man nekeičia dydžiu nei iš vieno lygmens, nei pirmo tėvinio div, nei vaiko, nei span, padding duoda, o width ir height nekeičia nieko  */
+                display: inherit;
+                border: 1px solid #c5c5c5;
+                padding: 5px 0 0 5px;
+/*                Ar geras toks būdas paddingo? nes iš dešinės ir apačios nulis parašyta.*/
             }
 
-            /* end of RESET */
-
-             /*My custom styles
-            start of HEADER section*/
-
-            span * {
-                border: 1px solid black;
-                width: 100px;
-
-
+            .squares-day__weekday--weekend {
+                background-color: #ffbb00;
             }
 
+            .squares-day__weekday--55 {
+                color: white;
+            }
 
-            /* end of HEADER section */
+            .squares-day__weekday--57 {
+                color: #ffbb00;
+            }
 
-            /* start of MAIN CONTENT section */
+/*         .squares-day__weekday--55 ir 57 klases padariau, nes be turinio divai nestojo man gražiai į eilę, tai idėjau į vidų skaičius ir po to suvienodinau spalvas su background, žinau, kad negerai taip, bet tai vienintelis būdas kurį sugalvojau    */
 
-            /*  end ofMAIN CONTENT section */
+            .squares-day__weekday--sporting {
+                background-color: #9ac738;
+                font-size: 10px;
+                width: 80px;
+                margin: 20px 3px 70px 10px;
+            }
 
-            /* start of FOOTER section*/
-
-            /* end of FOOTER section */
+            .squares-day__weekday--entertainment {
+                background-color: #bbb0de;
+                font-size: 10px;
+                width: 80px;
+                margin: 20px 3px 70px 10px;
+            }
         </style>
     </head>
 
     <body>
-        <div>
-            <span>July 2020</span>
+        <div class="header">
+            <span class="header-date">July 2020</span>
         </div>
-        <div>
-            <span>Monday</span>
-            <span>Tuesday</span>
-            <span>Wednesday</span>
-            <span>Thursday</span>
-            <span>Friday</span>
-            <span>Saturday</span>
-            <span>Sunday</span>
-        </div>
-        <div class="squares-day">
-            <span class="squares-day__weekday"></span>
-            <span class="squares-day__weekday"></span>
-            <span class="squares-day__weekday">1</span>
-            <span class="squares-day__weekday">2</span>
-            <span class="squares-day__weekday">3</span>
-            <span class="squares-day__weekday">4</span>
-            <span class="squares-day__weekday">5</span>
+        <div class="weekdays squares-day">
+            <div class="weekdays-names">Monday</div>
+            <div class="weekdays-names">Tuesday</div>
+            <div class="weekdays-names">Wednesday</div>
+            <div class="weekdays-names">Thursday</div>
+            <div class="weekdays-names">Friday</div>
+            <div class="weekdays-names">Saturday</div>
+            <div class="weekdays-names">Sunday</div>
         </div>
         <div class="squares-day">
-            <span class="squares-day__weekday">6</span>
-            <span class="squares-day__weekday">7</span>
-            <span class="squares-day__weekday">8</span>
-            <span class="squares-day__weekday">9</span>
-            <span class="squares-day__weekday">10</span>
-            <span class="squares-day__weekday">11</span>
-            <span class="squares-day__weekday">12</span>
+            <div class="squares-day__weekday squares-day__weekday--55 ">55</div>
+            <div class="squares-day__weekday squares-day__weekday--55">55</div>
+            <div class="squares-day__weekday">1</div>
+            <div class="squares-day__weekday">2</div>
+            <div class="squares-day__weekday">3</div>
+            <div class="squares-day__weekday squares-day__weekday--weekend">4</div>
+            <div class="squares-day__weekday squares-day__weekday--weekend">5</div>
         </div>
         <div class="squares-day">
-            <span class="squares-day__weekday">13</span>
-            <span class="squares-day__weekday">14</span>
-            <span class="squares-day__weekday">15</span>
-            <span class="squares-day__weekday">16</span>
-            <span class="squares-day__weekday">17</span>
-            <span class="squares-day__weekday">18</span>
-            <span class="squares-day__weekday">19</span>
+            <div class="squares-day__weekday">6
+                <div class="squares-day__weekday--sporting">Vilnius running</div>
+            </div>
+            <div class="squares-day__weekday">7</div>
+            <div class="squares-day__weekday">8</div>
+            <div class="squares-day__weekday">9</div>
+            <div class="squares-day__weekday">10</div>
+            <div class="squares-day__weekday squares-day__weekday--weekend">11</div>
+            <div class="squares-day__weekday squares-day__weekday--weekend">12</div>
         </div>
         <div class="squares-day">
-            <span class="squares-day__weekday">20</span>
-            <span class="squares-day__weekday">21</span>
-            <span class="squares-day__weekday">22</span>
-            <span class="squares-day__weekday">23</span>
-            <span class="squares-day__weekday">24</span>
-            <span class="squares-day__weekday">25</span>
-            <span class="squares-day__weekday">26</span>
+            <div class="squares-day__weekday">13</div>
+            <div class="squares-day__weekday">14
+                <div class="squares-day__weekday--entertainment">Concert</div>
+            </div>
+            <div class="squares-day__weekday">15</div>
+            <div class="squares-day__weekday">16</div>
+            <div class="squares-day__weekday">17</div>
+            <div class="squares-day__weekday squares-day__weekday--weekend">18</div>
+            <div class="squares-day__weekday squares-day__weekday--weekend">19
+                <div class="squares-day__weekday--entertainment">Summer festival</div>
+            </div>
         </div>
         <div class="squares-day">
-            <span class="squares-day__weekday">27</span>
-            <span class="squares-day__weekday">28</span>
-            <span class="squares-day__weekday">29</span>
-            <span class="squares-day__weekday">30</span>
-            <span class="squares-day__weekday">31</span>
-            <span class="squares-day__weekday"></span>
-            <span class="squares-day__weekday"></span>
+            <div class="squares-day__weekday">20</div>
+            <div class="squares-day__weekday">21</div>
+            <div class="squares-day__weekday">22</div>
+            <div class="squares-day__weekday">23</div>
+            <div class="squares-day__weekday">24</div>
+            <div class="squares-day__weekday squares-day__weekday--weekend">25</div>
+            <div class="squares-day__weekday squares-day__weekday--weekend">26</div>
+        </div>
+        <div class="squares-day">
+            <div class="squares-day__weekday">27</div>
+            <div class="squares-day__weekday">28</div>
+            <div class="squares-day__weekday">29</div>
+            <div class="squares-day__weekday">30</div>
+            <div class="squares-day__weekday">31</div>
+            <div class="squares-day__weekday squares-day__weekday--weekend squares-day__weekday--57">
+                57
+            </div>
+            <div class="squares-day__weekday squares-day__weekday--weekend squares-day__weekday--57">
+                57
+            </div>
         </div>
     </body>
 </html>

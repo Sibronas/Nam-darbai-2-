@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registracijos forma</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+
+
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+            .asmens-duomenys {
+                padding: 40px 20px 20px 20px;
+            }
+
+            .asmens-duomenys__inputai--vardas {
+                display: flex;
+                flex-direction: row;
+                flex-grow:  2;
+            }
+
+            .papildoma-info {
+                display: flex;
+            }
+
+
+            .asmens-duomenys__formavimas {
+                background-color: #fff6a3;
+            }
+
+            .papildoma-info__formavimas {
+                background-color: #c2ffbd;
+            }
+
+
+
+            .papildoma-info {
+                border: 1px solid black;
+            }
+
+            .papildoma-info__langeliai {
+                border: 1px solid black;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="col-6">
+                <h1 id="h1">Registracija į įrenginį</h1>
+                <div class="asmens-duomenys asmens-duomenys__formavimas">
+
+                    <h2 id="h2">Registracijos forma</h2>
+                    <p>
+                        Jei norite užsiregistruoti įrenginį, užpidykite žemiau esančia formą. Žemiau lentelėje galite matyti jau užsiregistravusius dalyvius
+                    </p>
+
+                    <div class="asmens-duomenys__inputai--vardas">
+                        <label for="vardas">Vardas</label>
+                        <input type="text" id="vardas" class="col-4" placeholder="Įveskite savo vardą">
+                    </div>
+                    <div class="asmens-duomenys__inputai--pavarde">
+                        <label for="pavarde">Pavardė</label>
+                        <input type="text" id="pavarde" placeholder="Įveskite savo pavardę">
+                    </div>
+                    <div class="asmens-duomenys__inputai--emailas">
+                        <label for="email">
+                            Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </label>
+                        <input type="email" id="email" placeholder="Iveskite el pasto adresa" required>
+                    </div>
+                    <div class="asmens-duomenys__inputai--submit">
+                        <input type="submit" value="Registruoti">
+                    </div>
+                </div>
+
+                <div class="papildoma-info papildoma-info__formavimas">
+                <h2>Jau užsiregistravę dalyviai</h2>
+                <div>
+                    <div class="papildoma-info__langeliai">Vardas</div>
+                    <div class="papildoma-info__langeliai">Pavardė</div>
+                    <div class="papildoma-info__langeliai">Elektroninis paštas</div>
+                    <div class="papildoma-info__langeliai">Jonas</div>
+                    <div class="papildoma-info__langeliai">Jonaitis</div>
+                    <div class="papildoma-info__langeliai">jonaitis@gmail.com</div>
+                    <div class="papildoma-info__langeliai">Petras</div>
+                    <div class="papildoma-info__langeliai">Petraitis</div>
+                    <div class="papildoma-info__langeliai">petraitis@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

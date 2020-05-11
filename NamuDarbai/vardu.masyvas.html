@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vardu masyvas</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>Vardu masyvas</h1>
+            <button onclick="vardai()">Paspausk</button>
+        </div>
+        <script>
+
+            function vardai (varduMasyvas, nespausdinamasVardas) {
+                var nespausdinamasVardas = "Urtė";
+                var varduMasyvas = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+                var naujasMasyvas = varduMasyvas.indexOf("Urtė");
+                varduMasyvas.splice(4, 1);
+                console.log(naujasMasyvas);
+                console.log(varduMasyvas);
+            }
+        </script>
+    </body>
+</html>

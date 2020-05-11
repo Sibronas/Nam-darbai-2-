@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS6. Age verificaion</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>Age verification</h1>
+            <p>Enter only if you are 18 or over!</p>
+            <button id="enter-your-age" onclick="enterYourAge()">Enter your age</button>
+        </div>
+
+        <script>
+            /* DECLARATIONS */
+
+            var verificationPositive = 'Enjoy the website';
+            var verificationNegative = 'You`re underage!';
+            var userAgeNumber = 18;
+
+            /* ACTION / EDITING/ ASSIGNING / FUNCTIONS / CALCULATIONS */
+            function enterYourAge() {
+                usersName = prompt('Enter your age, please !');
+                ageVerification(usersName);
+            }
+
+            function ageVerification(enterYourAge) {
+                if (enterYourAge >= userAgeNumber) {
+                    console.log('ok');
+                    alert(verificationPositive);
+                } else {
+                    console.log('not ok');
+                    alert(verificationNegative);
+                }
+            }
+
+             /* OUTPUT  */
+
+
+        </script>
+
+    </body>
+</html>

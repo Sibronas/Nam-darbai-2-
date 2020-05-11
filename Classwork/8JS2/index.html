@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS2</title>
+    </head>
+
+    <body>
+        <div>
+            <h1 id="page-title">My first JS file</h1>
+            <p>logo</p>
+            <p>All cars list:</p>
+            <p id="cars-list"></p>
+            <ol>
+                <li></li>
+            </ol>
+            <button id="add new car" onclick="promptAddNewCarLisencePlateNumber(); addCarToCarsArray(); addCarToOurDataObject(); ">Add new car</button>
+            <button id="check-prompt-value" onclick="checkPromptValue()">Check prompt value</button>
+        </div>
+
+        <script>
+            /* DECLARATIONS */
+            /* naming is byCamelCase, not snake-case */
+            var car, output; // var type is undifined
+            var isCarAvailable = true; // var type is boolen
+            var carTotal = 20; // integer / number!
+            var carsReserved = 10;
+            var saleMessage = 'First 2 hours are for free!'; // string
+            var newLisencePlate = ''; // nors ir tuscia, vistiek yra stringas
+            var counterOfPrompt = 0;
+            var carsList = ['JJT112', 'ASD123'];
+            var mainData = {
+                clientData: {
+                    name: {
+                        firstName: 'Asta',
+                        lastName: 'Jankauskiene',
+                    },
+                    email: 'asta@gmail.com',
+                    car: {
+                        model: '',
+                        vehicleType: 'B',
+                        lisencePlateNumber: 'none',
+                    }
+                },
+                adminData: {
+                    name: 'Norbertas',
+                    email:'norbertas@gmail.com',
+                    car: {
+                        model: '',
+                        vehicleType: 'B',
+                        lisencePlateNumber: 'none',
+                    }
+                }
+            };
+
+            /* ACTION / EDITING / ASSIGNING / FUNCTIONS / CALCULATIONS */
+            //alert(mainData.clientData.name.firstName);
+            //alert(mainData['clientData']['name']['firstName']);
+
+            if ((carTotal - carsReserved) > 0) {
+                carTotal = carTotal - carsReserved; //number
+            }
+
+            function promptAddNewCarLisencePlateNumber() {
+                // DIY. If numbers plate promt is empty set var value to ''
+                // if NOT assign promt value to var
+                while (counterOfPrompt < 3) {
+                    newLisencePlate = prompt('Enter your lisence plate number.');
+                    return newLisencePlate;
+
+                    if (newLisencePlate.length == 6) {
+                        break;
+                    } else {
+                        newLisencePlate = false;
+                        counterOfPrompt++; //counterOfPromt = counterOfPromt + 1; //ta pati reiskia
+                    }
+                }
+            }
+
+            function addCarToCarsArray() {
+                carsList.unshift(newLisencePlate);
+                document.getElementById('cars-list').innerHTML = carsList;
+            }
+
+            function addCarToOurDataObject() {
+                var lisencePlateNumberInObject = mainData.clientData.car.lisencePlateNumber
+                 lisencePlateNumberInObject= newLisencePlate;
+                console.log(newLisencePlate);
+                console.log(mainData);
+                //alert(lisencePlateNumberInObject);
+            }
+
+            function logToConsole(message) {
+                console.log(message);
+            }
+
+            function checkPromptValue() {
+                var alertMessage = promptAddNewCarLisencePlateNumber();
+                alert(newLisencePlate);
+            }
+
+            function addNewlyInsertedCarToCarsList() {
+
+            }
+
+            carTotal = '10'; //string
+            carTotal = String(carTotal); // same as 28th line.
+            output = saleMessage + ' Now we have ' + carTotal + ' available.';
+            newLisencePlate ? newLisencePlate : newLisencePlate = "License plate number is invalid !";
+            output = output + '<br>' + newLisencePlate;
+            carTotal = carTotal - 1;
+
+
+            /* OUTPUT */
+            // alert(typeof(carTotal));
+            document.write(output);
+            console.log(isCarAvailable);
+            document.getElementById('page-title').innerHTML = '<u>CLOSED</u>';
+            //typeof();
+        </script>
+    </body>
+</html>

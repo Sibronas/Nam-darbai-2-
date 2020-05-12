@@ -9,15 +9,12 @@
     <body>
         <div>
             <h1>Vardu masyvas</h1>
-            <button onclick="vardai()">Paspausk</button>
+            <button onclick='vardai(["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"],"Urtė")'>Paspausk</button>
         </div>
         <script>
-
-            function vardai (varduMasyvas, nespausdinamasVardas) {
-                var nespausdinamasVardas = "Urtė";
-                var varduMasyvas = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
-                var naujasMasyvas = varduMasyvas.indexOf("Urtė");
-                varduMasyvas.splice(4, 1);
+            function vardai (varduMasyvas,nespausdinamasVardas) {
+                var naujasMasyvas = varduMasyvas.indexOf(nespausdinamasVardas);
+                varduMasyvas.splice(naujasMasyvas, 1);
                 console.log(naujasMasyvas);
                 console.log(varduMasyvas);
             }

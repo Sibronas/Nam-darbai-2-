@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSON for</title>
+    </head>
+
+    <body>
+        <div id="cars-list"></div>
+        <script>
+            var mainData = [{
+                clientData: [{
+                    name: [{
+                        firstName: 'Asta',
+                        lastName: 'Jankauskiene',
+                    }],
+                    email: 'asta@gmail.com',
+                    cars: [{
+                        car: [{
+                            model: 'Ford',
+                            vehicleType: 'C',
+                            lisencePlateNumber: 'none',
+                        }],
+                        car: [{
+                            model: 'Opel',
+                            vehicleType: 'B',
+                            lisencePlateNumber: 'none',
+                        }],
+                        car: [{
+                            model: 'Fiat',
+                            vehicleType: 'B',
+                            lisencePlateNumber: 'none',
+                        }]
+                    }]
+                }],
+                adminData: [{
+                    name: 'Norbertas',
+                    email:'norbertas@gmail.com',
+                }]
+            }];
+            function printAllClientCars() {
+                for (var i = 0; i < mainData.clientData.cars.length; i++) {
+                    console.log(mainData.clientData.cars[0].model);
+                }
+            }
+            
+            printAllClientCars();
+            
+            
+        </script>
+    </body>
+</html>

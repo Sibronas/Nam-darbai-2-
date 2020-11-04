@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>switch classes</title>
+        <style>
+            /* antrajam budui */
+            .alertTextColor {
+                color: red;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <p id="main-content" class="colorfull-text">Some text</p>
+        <button id="change-color">change color</button>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+
+
+
+            // 1. sukurti mygtuka. Pavadinimas "change color"
+
+            // 2. paspaudus mygtuka (document.getElementById()) turi uzsideti paragrafui klase "red"
+            //var changeButton = document.getElementById('change-color');
+            var changeButton = $('#change-color');
+            //changeButton.addEventListener('click', changeTextColor);
+            $changeButton.on('click', function () {
+                //var changableText = document.querySelector('p#main-content.colorfull-text');
+                var $changableText = $('p#main-content.colorfull-text');
+                // 1. budas. prideti CSS/ stiliu per javascript
+                //changableText.style.color = 'red';
+
+                // 2. budas. prideti klase, kuomet klase deklaruota bus pakeisti spalva
+                if (changableText.hasClass('alert-text-color')) {
+                    changableText.removeClass('alert-text-color');
+                } else {
+                    changableText.addClass('alert-text-color');
+                }
+            });
+
+
+
+            // 3. klase alertTextColor per styles nustatykite texto spalva/foreground i "red".
+
+            // 4. paspaudus dar karteli mygtuka panaikinkite klase.
+            // if (checkas/tikrinate ar tas elementas ar turi klase 'alertTextColor') ir jei turi  tai ja panaikinti.
+        </script>
+
+    </body>
+</html>
